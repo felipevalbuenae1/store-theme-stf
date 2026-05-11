@@ -96,3 +96,46 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .flexRow--moments-card .flexCol {
+    padding: 25px;
+  }
+}
+
+.flexRow--session-row {
+  gap: 3px;
+  width: 100%;
+}
+
+.flexRow--session-row .flexCol {
+  padding: 0;
+  flex: 1;
+}
+
+.flexRow--session-slide {
+  width: 100%;
+  gap: 3px;
+}
+
+.flexCol--session-slide-col {
+  padding: 0;
+  gap: 3px;
+  width: 50% !important;
+  max-width: 50% !important;
+  flex: 0 0 50% !important;
+}
+
+@media (max-width: 1024px) {
+  .flexCol--session-slide-col {
+    display: contents !important;
+  }
+}
+
+.flexColChild--session-slide-col {
+  padding: 1px;
+}
+
+.flexRow--session-slide .stretchChildrenWidth {
+  padding: 1px;
+}

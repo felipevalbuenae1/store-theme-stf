@@ -29,3 +29,51 @@
   padding-right: .5rem;
   min-height: 550px;
 }
+
+.sliderLayoutContainer--prueba-hero {
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .vtex-render__container-id-hotspot-products {
+    padding-inline: 100px;
+  }
+}
+
+.sliderLayoutContainer--hotspot-products .slide--visible {
+  padding: 10px;
+}
+
+@media (min-width: 1025px) {
+  .sliderTrackContainer--hotspot-products {
+    padding-inline: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sliderLayoutContainer--hotspot-products .slide--visible {
+    padding: 35px;
+  }
+}
+
+.caretIcon--hotspot-products {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.caretIcon--moments {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+@media (min-width: 1025px) {
+
+  .sliderLayoutContainer--moments {
+    padding-inline: 30px;
+  }
+}
+
+.sliderLayoutContainer--moments .slide--visible {
+  padding: 10px;
+}
+

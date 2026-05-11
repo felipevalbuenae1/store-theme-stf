@@ -1,3 +1,16 @@
+.imageElement--moments-card-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  .imageElement--moments-card-img {
+    height: auto !important;
+  }
+}
+
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
@@ -56,9 +69,36 @@
   padding-top: 0px;
 }
 
+.imageElement--session-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  -webkit-writing-mode: horizontal-tb;
+  writing-mode: horizontal-tb;
+}
+
+@media (max-width: 1024px) {
+  .imageElement--session-photo {
+    height: 160px;
+  }
+}
+
 .imageElement--storePrint {
   max-height: 300px;
   margin-bottom: 20px;
+}
+
+.imageElement--prueba-slide-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .imageElement--prueba-slide-img {
+    height: 520px;
+  }
 }
 
 .skuSelectorContainer {

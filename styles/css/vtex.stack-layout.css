@@ -1,3 +1,36 @@
+.stackContainer--moments-img-stack {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.stackItem--moments-img-stack:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0.85rem;
+  pointer-events: none;
+}
+
+.stackContainer--moments-img-stack:hover .stackItem--moments-img-stack:last-child {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.stackItem--moments-img-stack--moments-card-img {
+  height: auto !important;
+}
+
 .stackItem--product {
   width: 100%;
   min-height: 257px

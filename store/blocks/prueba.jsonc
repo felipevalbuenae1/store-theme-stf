@@ -1,0 +1,352 @@
+{
+  "store.custom#prueba": {
+    "blocks": [
+      "responsive-layout.desktop#prueba-hero",
+      "responsive-layout.mobile#prueba-hero",
+      "slider-hero-styles",
+      "rich-text#new-arrivals",
+      "hotspot-card-config",
+      "slider-layout#hotspot-products",
+      "rich-text#moments",
+      "slider-layout#moments",
+      "rich-text#session-photos",
+      "responsive-layout.desktop#session-photos",
+      "responsive-layout.mobile#session-photos"
+    ]
+  },
+
+  "rich-text#new-arrivals": {
+    "props": {
+      "text": "## NEW ARRIVALS",
+      "textAlignment": "CENTER",
+      "blockClass": "new-arrivals"
+    }
+  },
+
+  "responsive-layout.desktop#prueba-hero": {
+    "children": ["slider-layout#prueba-hero-desktop"]
+  },
+
+  "responsive-layout.mobile#prueba-hero": {
+    "children": ["slider-layout#prueba-hero-mobile"]
+  },
+
+  "slider-layout#prueba-hero-desktop": {
+    "children": [
+      "image#prueba-slide-1-desktop",
+      "image#prueba-slide-2-desktop",
+      "image#prueba-slide-3-desktop",
+      "image#prueba-slide-4-desktop"
+    ],
+    "props": {
+      "itemsPerPage": { "desktop": 1, "tablet": 1, "phone": 1 },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "prueba-hero"
+    }
+  },
+
+  "slider-layout#prueba-hero-mobile": {
+    "children": [
+      "image#prueba-slide-1-mobile",
+      "image#prueba-slide-2-mobile",
+      "image#prueba-slide-3-mobile",
+      "image#prueba-slide-4-mobile"
+    ],
+    "props": {
+      "itemsPerPage": { "desktop": 1, "tablet": 1, "phone": 1 },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "prueba-hero"
+    }
+  },
+
+  "image#prueba-slide-1-desktop": {
+    "props": { "src": "assets/image-slider-2.png", "blockClass": "prueba-slide-img" }
+  },
+  "image#prueba-slide-2-desktop": {
+    "props": { "src": "assets/image-slider-3.png", "blockClass": "prueba-slide-img" }
+  },
+  "image#prueba-slide-3-desktop": {
+    "props": { "src": "assets/image-slider-4.png", "blockClass": "prueba-slide-img" }
+  },
+  "image#prueba-slide-4-desktop": {
+    "props": { "src": "assets/image-slider-5.png", "blockClass": "prueba-slide-img" }
+  },
+
+  "image#prueba-slide-1-mobile": {
+    "props": { "src": "assets/image-slider-2-mobile.png", "blockClass": "prueba-slide-img" }
+  },
+  "image#prueba-slide-2-mobile": {
+    "props": { "src": "assets/image-slider-3-mobile.png", "blockClass": "prueba-slide-img" }
+  },
+  "image#prueba-slide-3-mobile": {
+    "props": { "src": "assets/image-slider-4-mobile.png", "blockClass": "prueba-slide-img" }
+  },
+  "image#prueba-slide-4-mobile": {
+    "props": { "src": "assets/image-slider-5-mobile.png", "blockClass": "prueba-slide-img" }
+  },
+
+  "slider-layout#hotspot-products": {
+    "children": [
+      "hotspot-card#product-1",
+      "hotspot-card#product-2",
+      "hotspot-card#product-3",
+      "hotspot-card#product-4"
+    ],
+    "props": {
+      "itemsPerPage": { "desktop": 4, "tablet": 2, "phone": 1 },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": "hotspot-products"
+    }
+  },
+
+  "hotspot-card#product-1": {
+    "props": {
+      "imageUrl": "assets/section2-image1.png",
+      "productUrl": "/leggins-pitillo/p",
+      "hotspots": [
+        {
+          "top": "55%",
+          "left": "40%",
+          "size": "2rem",
+          "color": "rgba(255,255,255,0.88)",
+          "productName": "Leggins pitillo con pretina ancha",
+          "skuId": "1",
+          "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+        },
+        {
+          "top": "30%",
+          "left": "60%",
+          "size": "1.75rem",
+          "color": "rgba(255,255,255,0.88)",
+          "productName": "Blusa manga corta",
+          "skuId": "5",
+          "sizes": ["S", "M", "L", "XL"]
+        }
+      ]
+    }
+  },
+  "hotspot-card#product-2": {
+    "props": {
+      "imageUrl": "assets/section2-image2.png",
+      "productUrl": "/falda-midi/p",
+      "hotspots": [
+        {
+          "top": "60%",
+          "left": "50%",
+          "productName": "Falda midi plisada",
+          "skuId": "2",
+          "sizes": ["XS", "S", "M", "L", "XL"]
+        }
+      ]
+    }
+  },
+  "hotspot-card#product-3": {
+    "props": {
+      "imageUrl": "assets/section2-image3.png",
+      "productUrl": "/blusa-estampada/p",
+      "hotspots": [
+        {
+          "top": "35%",
+          "left": "50%",
+          "productName": "Blusa estampada manga larga",
+          "skuId": "3",
+          "sizes": ["S", "M", "L", "XL"]
+        }
+      ]
+    }
+  },
+  "hotspot-card#product-4": {
+    "props": {
+      "imageUrl": "assets/section2-image4.png",
+      "productUrl": "/pantalon-recto/p",
+      "hotspots": [
+        {
+          "top": "65%",
+          "left": "50%",
+          "productName": "Pantalón recto de lino",
+          "skuId": "4",
+          "sizes": ["XS", "S", "M", "L", "XL"]
+        }
+      ]
+    }
+  },
+
+  "rich-text#moments": {
+    "props": {
+      "text": "## MOMENTS",
+      "textAlignment": "CENTER",
+      "blockClass": "new-arrivals"
+    }
+  },
+
+  "slider-layout#moments": {
+    "children": [
+      "flex-layout.row#moments-card-1",
+      "flex-layout.row#moments-card-2",
+      "flex-layout.row#moments-card-3",
+      "flex-layout.row#moments-card-4"
+    ],
+    "props": {
+      "itemsPerPage": { "desktop": 4, "tablet": 2, "phone": 1 },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": "moments"
+    }
+  },
+
+  "flex-layout.row#moments-card-1": {
+    "children": ["flex-layout.col#moments-inner-1"],
+    "props": { "blockClass": "moments-card" }
+  },
+  "flex-layout.row#moments-card-2": {
+    "children": ["flex-layout.col#moments-inner-2"],
+    "props": { "blockClass": "moments-card" }
+  },
+  "flex-layout.row#moments-card-3": {
+    "children": ["flex-layout.col#moments-inner-3"],
+    "props": { "blockClass": "moments-card" }
+  },
+  "flex-layout.row#moments-card-4": {
+    "children": ["flex-layout.col#moments-inner-4"],
+    "props": { "blockClass": "moments-card" }
+  },
+
+  "flex-layout.col#moments-inner-1": {
+    "children": ["stack-layout#moments-img-1", "rich-text#moments-title-1", "rich-text#moments-desc-1"]
+  },
+  "flex-layout.col#moments-inner-2": {
+    "children": ["stack-layout#moments-img-2", "rich-text#moments-title-2", "rich-text#moments-desc-2"]
+  },
+  "flex-layout.col#moments-inner-3": {
+    "children": ["stack-layout#moments-img-3", "rich-text#moments-title-3", "rich-text#moments-desc-3"]
+  },
+  "flex-layout.col#moments-inner-4": {
+    "children": ["stack-layout#moments-img-4", "rich-text#moments-title-4", "rich-text#moments-desc-4"]
+  },
+
+  "stack-layout#moments-img-1": {
+    "children": ["image#moments-1", "rich-text#moments-read-more"],
+    "props": { "blockClass": "moments-img-stack" }
+  },
+  "stack-layout#moments-img-2": {
+    "children": ["image#moments-2", "rich-text#moments-read-more"],
+    "props": { "blockClass": "moments-img-stack" }
+  },
+  "stack-layout#moments-img-3": {
+    "children": ["image#moments-3", "rich-text#moments-read-more"],
+    "props": { "blockClass": "moments-img-stack" }
+  },
+  "stack-layout#moments-img-4": {
+    "children": ["image#moments-4", "rich-text#moments-read-more"],
+    "props": { "blockClass": "moments-img-stack" }
+  },
+
+  "rich-text#moments-read-more": {
+    "props": { "text": "Leer más", "blockClass": "moments-read-more" }
+  },
+
+  "image#moments-1": { "props": { "src": "assets/section4-image1.png", "alt": "Moment 1", "blockClass": "moments-card-img" } },
+  "image#moments-2": { "props": { "src": "assets/section4-image2.png", "alt": "Moment 2", "blockClass": "moments-card-img" } },
+  "image#moments-3": { "props": { "src": "assets/section4-image3.jpg", "alt": "Moment 3", "blockClass": "moments-card-img" } },
+  "image#moments-4": { "props": { "src": "assets/section4-image4.png", "alt": "Moment 4", "blockClass": "moments-card-img" } },
+
+  "rich-text#moments-title-1": { "props": { "text": "**Title of moment**", "blockClass": "moments-card-title" } },
+  "rich-text#moments-title-2": { "props": { "text": "**Title of moment**", "blockClass": "moments-card-title" } },
+  "rich-text#moments-title-3": { "props": { "text": "**Title of moment**", "blockClass": "moments-card-title" } },
+  "rich-text#moments-title-4": { "props": { "text": "**Title of moment**", "blockClass": "moments-card-title" } },
+
+  "rich-text#moments-desc-1": { "props": { "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error labore quos.", "blockClass": "moments-card-desc" } },
+  "rich-text#moments-desc-2": { "props": { "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error labore quos.", "blockClass": "moments-card-desc" } },
+  "rich-text#moments-desc-3": { "props": { "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error labore quos.", "blockClass": "moments-card-desc" } },
+  "rich-text#moments-desc-4": { "props": { "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error labore quos.", "blockClass": "moments-card-desc" } },
+
+  "rich-text#session-photos": {
+    "props": {
+      "text": "## SESSION PHOTOS",
+      "textAlignment": "CENTER",
+      "blockClass": "new-arrivals"
+    }
+  },
+
+  "responsive-layout.desktop#session-photos": {
+    "children": ["flex-layout.row#session-row-1", "flex-layout.row#session-row-2"]
+  },
+
+  "flex-layout.row#session-row-1": {
+    "children": ["image#session-d-1", "image#session-d-2", "image#session-d-3", "image#session-d-4", "image#session-d-5"],
+    "props": { "blockClass": "session-row" }
+  },
+  "flex-layout.row#session-row-2": {
+    "children": ["image#session-d-6", "image#session-d-7", "image#session-d-8", "image#session-d-9", "image#session-d-10"],
+    "props": { "blockClass": "session-row" }
+  },
+
+  "responsive-layout.mobile#session-photos": {
+    "children": ["slider-layout#session-photos"]
+  },
+
+  "slider-layout#session-photos": {
+    "children": ["flex-layout.row#session-slide-1", "flex-layout.row#session-slide-2"],
+    "props": {
+      "itemsPerPage": { "desktop": 1, "phone": 1 },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "session-photos"
+    }
+  },
+
+  "flex-layout.row#session-slide-1": {
+    "children": ["flex-layout.col#session-col-1a", "flex-layout.col#session-col-1b"],
+    "props": { "blockClass": "session-slide" }
+  },
+
+  "flex-layout.row#session-slide-2": {
+    "children": ["flex-layout.col#session-col-2a", "flex-layout.col#session-col-2b"],
+    "props": { "blockClass": "session-slide" }
+  },
+
+  "flex-layout.col#session-col-1a": {
+    "children": ["image#session-m-1", "image#session-m-2"],
+    "props": { "blockClass": "session-slide-col" }
+  },
+  "flex-layout.col#session-col-1b": {
+    "children": ["image#session-m-3", "image#session-m-4"],
+    "props": { "blockClass": "session-slide-col" }
+  },
+  "flex-layout.col#session-col-2a": {
+    "children": ["image#session-m-5", "image#session-m-6"],
+    "props": { "blockClass": "session-slide-col" }
+  },
+  "flex-layout.col#session-col-2b": {
+    "children": ["image#session-m-7", "image#session-m-8"],
+    "props": { "blockClass": "session-slide-col" }
+  },
+
+  "image#session-d-1":  { "props": { "src": "assets/section5-image1.png",  "blockClass": "session-photo" } },
+  "image#session-d-2":  { "props": { "src": "assets/section5-image2.png",  "blockClass": "session-photo" } },
+  "image#session-d-3":  { "props": { "src": "assets/section5-image3.png",  "blockClass": "session-photo" } },
+  "image#session-d-4":  { "props": { "src": "assets/section5-image4.png",  "blockClass": "session-photo" } },
+  "image#session-d-5":  { "props": { "src": "assets/section5-image5.png",  "blockClass": "session-photo" } },
+  "image#session-d-6":  { "props": { "src": "assets/section5-image6.png",  "blockClass": "session-photo" } },
+  "image#session-d-7":  { "props": { "src": "assets/section5-image7.png",  "blockClass": "session-photo" } },
+  "image#session-d-8":  { "props": { "src": "assets/section5-image8.png",  "blockClass": "session-photo" } },
+  "image#session-d-9":  { "props": { "src": "assets/section5-image9.png",  "blockClass": "session-photo" } },
+  "image#session-d-10": { "props": { "src": "assets/section5-image10.png", "blockClass": "session-photo" } },
+
+  "image#session-m-1": { "props": { "src": "assets/section5-image1.png",  "blockClass": "session-photo" } },
+  "image#session-m-2": { "props": { "src": "assets/section5-image2.png",  "blockClass": "session-photo" } },
+  "image#session-m-3": { "props": { "src": "assets/section5-image3.png",  "blockClass": "session-photo" } },
+  "image#session-m-4": { "props": { "src": "assets/section5-image4.png",  "blockClass": "session-photo" } },
+  "image#session-m-5": { "props": { "src": "assets/section5-image5.png",  "blockClass": "session-photo" } },
+  "image#session-m-6": { "props": { "src": "assets/section5-image6.png",  "blockClass": "session-photo" } },
+  "image#session-m-7": { "props": { "src": "assets/section5-image7.png",  "blockClass": "session-photo" } },
+  "image#session-m-8": { "props": { "src": "assets/section5-image8.png",  "blockClass": "session-photo" } }
+}
